@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: Android;
+    src: url('/Desafios/desafiosite/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: linear-gradient(to bottom,#3ddc84,#1a5c37 );
+    color: white;
+    text-align: center;
+    min-height: 150px;
+    padding-top: 80px;
+    
+}
+header> h1{
+    font-family: var(--fonte-destaque);
+    margin-bottom: 30px;
+    font-size: 3em;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.182);
+ 
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    max-width: 600px;
+    margin: auto;
+}
+nav{
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+nav > a:hover{
+    background-color: #3ddc84;
+    padding: 20px;
+    border-radius: 30px 0px 30px 0px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.314);
+    color: black;
+    font-weight: bolder;
+    
+    position:static;
+}
+
+main{
+    background-color: white;
+    color: var(--cor5);
+    padding: 10px;
+    min-width: 200px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.26)
+}
+
+main h1{
+    font-family: var(--font-android);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: underline;
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    border-radius: 10px;
+}
+
+main h2{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: underline;  
+    font-family: var(--font-android);
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    border-radius: 10px;
+    
+}
+article > p{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+
+main img{
+    width: 100%;
+}
+
+
+
+main img.pequena{
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+aside{
+        border-radius: 10px;
+        background-color:#83e1ad;
+        padding: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.342);
+}
+
+
+aside > h3{
+    background-color: #1a5c37;
+    color: white;
+    margin: 0px;
+    
+}
+aside > p{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+aside > h3{
+    text-align: justify;
+    padding: 10px;
+    text-decoration: underline;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    
+    
+    
+}
+
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00a0\00a0';
+}
+
+article p{
+    
+    line-height:30px;
+    text-indent: 30px;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #063d1e;
+    background-color: #c5ebd6;
+    padding: 3px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    background-color: #063d1e;
+    color: white;
+}
+
+footer{
+    background-color: #1a5c37;
+    color: #83e1ad;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: white;
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+    background-color: #048f40;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+a.external::after{
+    content: '\00a0\00a0\1f517';
+}
+
+a{
+    class:"external";
+    w
+}
+
+div.video{
+    background-color: #063d1e;
+    padding: 30px;
+    margin: 0px -20px 30px -20px;
+    position:relative;
+    padding-bottom: 55%;
+}
+
+div.video >iframe{
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+}
+
+
+
+
+
+
